@@ -28,7 +28,7 @@ jobs:
         working-directory: attendance_bunk_tracker
 
       - name: Upload APK
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: app-release-apk
           path: attendance_bunk_tracker/build/app/outputs/flutter-apk/app-release.apk
