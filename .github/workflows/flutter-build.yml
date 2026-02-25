@@ -18,7 +18,8 @@ jobs:
         run: |
           git clone https://github.com/flutter/flutter.git --depth 1 -b stable $HOME/flutter
           echo "$HOME/flutter/bin" >> $GITHUB_PATH
-          flutter --version
+          export PATH="$HOME/flutter/bin:$PATH"
+          flutter doctor
 
       - name: Get dependencies
         run: flutter pub get
