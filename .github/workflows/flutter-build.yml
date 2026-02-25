@@ -21,6 +21,10 @@ jobs:
           export PATH="$HOME/flutter/bin:$PATH"
           flutter doctor
 
+      - name: Regenerate Android folder
+        run: flutter create .
+        working-directory: attendance_bunk_tracker
+
       - name: Get dependencies
         run: flutter pub get
         working-directory: attendance_bunk_tracker
