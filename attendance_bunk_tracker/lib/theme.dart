@@ -22,7 +22,7 @@ class AppTheme {
           background: bg,
           error: danger,
         ),
-        cardTheme: const CardThemeData(
+        cardTheme: CardThemeData(
           color: card,
           elevation: 0,
           shape:
